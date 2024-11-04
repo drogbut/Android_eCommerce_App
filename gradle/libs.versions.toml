@@ -15,6 +15,7 @@ navigationUiKtx = "2.8.3"
 kotlin-parcelize = "2.0.21"
 kotlin-kapt = "2.0.21"
 glide = "4.16.0"
+activity = "1.9.2"
 
 
 
@@ -35,6 +36,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 
 [plugins]
