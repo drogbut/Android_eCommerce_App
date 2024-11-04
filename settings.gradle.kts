@@ -17,7 +17,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
 }
+
 
 rootProject.name = "Android_eCommerce_App"
 include(":app")
