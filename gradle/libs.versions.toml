@@ -1,18 +1,31 @@
 [versions]
-agp = "8.6.0"
+agp = "8.6.1"
 kotlin = "1.9.0"
-coreKtx = "1.13.1"
+coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+loader = "1.1.0"
 material = "1.12.0"
-constraintlayout = "2.1.4"
-navigationFragmentKtx = "2.8.2"
-navigationUiKtx = "2.8.2"
+constraintlayout = "2.2.0"
+navigationFragmentKtx = "2.8.3"
+navigationTesting = "2.8.3"
+navigationUiKtx = "2.8.3"
+kotlin-parcelize = "2.0.21"
+kotlin-kapt = "2.0.21"
+glide = "4.16.0"
+
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-loader = { module = "androidx.loader:loader", version.ref = "loader" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationTesting" }
+androidx-navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigationTesting" }
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigationTesting" }
+androidx-navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "navigationTesting" }
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationTesting" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -21,8 +34,12 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin-parcelize" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin-kapt" }
 

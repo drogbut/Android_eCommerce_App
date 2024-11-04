@@ -1,11 +1,13 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
     namespace = "com.example.android_ecommerce_app"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.android_ecommerce_app"
@@ -49,4 +51,26 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // Jetpack Compose integration
+    implementation(libs.androidx.navigation.compose)
+
+    // Views/Fragments integration
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
+
+    // Feature module support for Fragments
+    implementation(libs.androidx.navigation.dynamic.features.fragment)
+
+    // Testing Navigation
+    androidTestImplementation(libs.androidx.navigation.testing)
+
+    // Loading button
+    implementation(libs.androidx.loader)
+
+    // Glide
+    implementation(libs.glide)
+
+
 }
