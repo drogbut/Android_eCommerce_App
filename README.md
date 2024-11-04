@@ -6,6 +6,7 @@ The E-Commerce Android App is a mobile solution that allows users to browse, sea
 * Create new project & setup the folders structure - feature first approach
 * Integrated Git for version control and connected the project to GitHub
 * Configure the project with google Firebase
+* Add dependencies, assets folders and folders struture 
 
 ### LOGIN / REGISTER 
 * 
