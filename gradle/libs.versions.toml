@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.1"
+constraintlayoutVersion = "2.1.4"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -16,10 +17,14 @@ kotlin-parcelize = "2.0.21"
 kotlin-kapt = "2.0.21"
 glide = "4.16.0"
 activity = "1.9.2"
+annotation = "1.8.2"
+lifecycleLivedataKtx = "2.8.6"
+lifecycleViewmodelKtx = "2.8.6"
 
 
 
 [libraries]
+androidx-constraintlayout-v214 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-loader = { module = "androidx.loader:loader", version.ref = "loader" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationTesting" }
@@ -37,6 +42,9 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 
 
 [plugins]
