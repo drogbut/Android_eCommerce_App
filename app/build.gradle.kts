@@ -53,6 +53,16 @@ dependencies {
 
     /// Material3
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.navigation.ui.ktx)
+
+    // Animations & GIF
+    implementation(libs.lottie.compose)
+    implementation(libs.coil.compose.v230)
+    implementation(libs.accompanist.pager.indicators)
+
+
+
 }
 
 
