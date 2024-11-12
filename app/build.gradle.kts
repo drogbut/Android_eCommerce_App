@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.parcelize)
-    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.jetbrains.kotlin.android)
+
 }
 
 android {
@@ -16,7 +15,10 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+
     }
 
     buildTypes {
@@ -41,43 +43,28 @@ android {
 }
 
 dependencies {
+    // Androidx
+    implementation(libs.bundles.androidx)
 
-    implementation(libs.androidx.core.ktx)
+    // Compose
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.tooling)
+    implementation(libs.bundles.ui)
+
+    /// Material3
+    implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.annotation)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 
+    // Animations & GIF
+    implementation(libs.lottie.compose)
+    implementation(libs.coil.compose.v230)
+    implementation(libs.accompanist.pager.indicators)
 
-    // Jetpack Compose integration
-    implementation(libs.androidx.navigation.compose)
-
-    // Views/Fragments integration
-    implementation(libs.androidx.navigation.fragment)
-    implementation(libs.androidx.navigation.ui)
-
-    // Feature module support for Fragments
-    implementation(libs.androidx.navigation.dynamic.features.fragment)
-
-    // Testing Navigation
-    androidTestImplementation(libs.androidx.navigation.testing)
-
-    // Loading button
-    implementation(libs.androidx.loader)
-
-    // Glide
-    implementation(libs.glide)
-
-    // constraintlayout
-    implementation(libs.androidx.constraintlayout.v214)
 
 
 }
+
+
+
+
